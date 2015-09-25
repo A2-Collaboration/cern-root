@@ -237,6 +237,7 @@ public:
    virtual void      Update();
 
    virtual void      SaveMultiImages(const char* basename);     // *MENU*
+   virtual void      OpenInNewCanvas(); // *MENU*
 
    //
    Bool_t              UseGL() const { return fUseGL; }

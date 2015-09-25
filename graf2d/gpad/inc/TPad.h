@@ -399,6 +399,8 @@ public:
    virtual void      EventPave() { Emit("EventPave()"); }         // *SIGNAL*
    virtual void      StartEditing() { Emit("StartEditing()"); }   // *SIGNAL*
 
+   virtual void      OpenInNewCanvas(); // *MENU*
+
    ClassDef(TPad,11)  //A Graphics pad
 };
 

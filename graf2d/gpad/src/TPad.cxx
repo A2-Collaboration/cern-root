@@ -6735,3 +6735,17 @@ void TPad::SetBBoxY2(const Int_t y)
    ResizePad();
 }
 
+
+void TPad::OpenInNewCanvas() {
+    TVirtualPad* tmp = gPad;
+    TCanvas* c = new TCanvas();
+    c->Modified();
+    c->Update();
+    c->cd();
+    
+    TPad* p = dynamic_cast<TPad*>(this->DrawClone());
+    if(p)
+        p->SetPad(0,0,1,1);
+
+    tmp->cd();
+}
