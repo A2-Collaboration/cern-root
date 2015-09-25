@@ -236,6 +236,8 @@ public:
    virtual void      ToggleToolTips();
    virtual void      Update();
 
+   virtual void      SaveMultiImages(const char* basename);     // *MENU*
+
    //
    Bool_t              UseGL() const { return fUseGL; }
    void                SetSupportGL(Bool_t support) {fUseGL = support;}

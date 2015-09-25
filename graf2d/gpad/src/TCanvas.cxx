@@ -2293,3 +2293,9 @@ void TCanvas::DeleteCanvasPainter()
       fGLDevice = -1;
    }
 }
+
+void TCanvas::SaveMultiImages(const char* basename) {
+    SaveAs(Form("%s.pdf", basename));
+    SaveAs(Form("%s.png", basename));
+    SaveAs(Form("%s.root", basename));
+}
