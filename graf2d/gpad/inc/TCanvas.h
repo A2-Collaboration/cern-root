@@ -236,7 +236,6 @@ public:
    virtual void      ToggleToolTips();
    virtual void      Update();
 
-   virtual void      SaveMultiImages(const char* basename);     // *MENU*
    virtual void      OpenInNewCanvas(); // *MENU*
 
    //

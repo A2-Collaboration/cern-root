@@ -400,6 +400,7 @@ public:
    virtual void      StartEditing() { Emit("StartEditing()"); }   // *SIGNAL*
 
    virtual void      OpenInNewCanvas(); // *MENU*
+   virtual void      SaveMultiImages(const char* basename);     // *MENU*
 
    ClassDef(TPad,11)  //A Graphics pad
 };

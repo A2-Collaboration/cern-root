@@ -2294,12 +2294,6 @@ void TCanvas::DeleteCanvasPainter()
    }
 }
 
-void TCanvas::SaveMultiImages(const char* basename) {
-    SaveAs(Form("%s.pdf", basename));
-    SaveAs(Form("%s.png", basename));
-    SaveAs(Form("%s.root", basename));
-}
-
 void TCanvas::OpenInNewCanvas() {
    this->DrawClone();
 }
