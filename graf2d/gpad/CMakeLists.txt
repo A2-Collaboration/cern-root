@@ -9,5 +9,5 @@ include_directories(${CMAKE_SOURCE_DIR}/hist/hist/inc)  # This is to avoid a cir
 
 ROOT_GENERATE_DICTIONARY(G__GPad *.h LINKDEF LinkDef.h)
 ROOT_GENERATE_ROOTMAP(Gpad LINKDEF LinkDef.h DEPENDENCIES Graf Hist)
-ROOT_LINKER_LIBRARY(Gpad *.cxx G__GPad.cxx DEPENDENCIES Graf Hist)
+ROOT_LINKER_LIBRARY(Gpad *.cxx ../inc/*.h G__GPad.cxx DEPENDENCIES Graf Hist)
 ROOT_INSTALL_HEADERS()
